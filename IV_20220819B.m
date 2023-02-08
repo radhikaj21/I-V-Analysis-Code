@@ -95,7 +95,7 @@ figure;
 for i = 1:length(fileList)
    
    plot(mrangeIlist{i}, mrangeVlist{i},'. ', 'MarkerSize', 10)      
-   title (["I-V Plot " cell_name])
+   title (["I-V Plot "  strrep(cell_name,'_',' ')])
     xlabel('I (pA)')
     ylabel('V (mV)')
     hold on
